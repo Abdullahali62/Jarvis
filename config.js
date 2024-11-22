@@ -14,7 +14,7 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./database.db" : 
 
 module.exports = {
   VERSION: require('./package.json').version,
-  BAN_CHATS: process.env.BAN_CHATS || "",
+  BAN_CHATS: process.env.BAN_CHATS || "jid1",
   PORT: toBool(process.env.PORT) || 8000,
   PM_BLOCKER: toBool(process.env.PM_BLOCKER) || false,
   PM_BLOCKER_MSG: process.env.PM_BLOCKER_MSG || "```Pm blocker active on this chat!!```",
@@ -53,7 +53,7 @@ module.exports = {
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi $mention It was Nice Seeing you",
   MEDIA_DATA: process.env.MEDIA_DATA|| 'ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://graph.org/file/58ea74675af7836579a3a.jpg',
   MENU_FONT: process.env.MENU_FONT || "0;0",
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '923107612528',
   TIMEZONE: process.env.TIMEZONE || "Asia/Kolkata",
   STARTING_MSG: toBool(process.env.STARTING_MSG) || true,
   STATUS_REACTION_EMOJI: process.env.STATUS_REACTION_EMOJI || "🍉,🍓",
